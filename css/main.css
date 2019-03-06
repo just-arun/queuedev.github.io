@@ -14,3 +14,51 @@
   -webkit-transform: translateY(100px);
   -ms-transform: translateY(100px);
   transform: translateY(100px); }
+
+.sub-page {
+  display: none;
+  opacity: 0; }
+
+footer {
+  padding: 30px 0px; }
+
+.floating-button-custom {
+  bottom: 10px;
+  right: 10px; }
+
+.whatsapp {
+  width: 2.5rem; }
+
+.animated-underline {
+  position: relative;
+  text-transform: capitalize;
+  margin-bottom: 30px; }
+  .animated-underline::after {
+    content: '';
+    bottom: -10px;
+    right: 0%;
+    position: absolute;
+    border: 1px solid red;
+    width: 0%;
+    -webkit-animation: toLeft 2s 1 forwards linear;
+    animation: toLeft 2s 1 forwards linear; }
+
+@-webkit-keyframes toLeft {
+  0% {
+    width: 0%;
+    right: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 50%;
+    left: 0%; } }
+
+@keyframes toLeft {
+  0% {
+    width: 0%;
+    right: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    width: 50%;
+    left: 0%; } }
