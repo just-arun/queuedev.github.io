@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <title>test</title>
+    <title>QueueDev</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,9 +20,11 @@
                     <a href="#!" class="brand-logo" id="Title">QueueDev</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                    <li><a href="#" >home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li class="home-link"><a href="#" >home</a></li>
+                    <li class="staaticpage-details"><a href="#static-webpage">static website</a></li>
+                    <li class="dynamic-webpage"><a href="#dynamic-webpage">dynamic webpage</a></li>
+                    <li class="e_comercing-webpage"><a href="#e_comercing-webpage">e-comercing</a></li>
+                    <li><a class="modal-trigger" href="#contact-model">contact</a></li>
                     <li><a href="#">help!</a></li>
                     </ul>
                 </div>
@@ -31,10 +33,10 @@
         
             <ul class="sidenav" id="mobile-demo">
             <li><h4 class="center red white-text custom-title">QueueDev</h4></li>
-            <li><a class="waves-effect home-link" id="home-link" >home</a></li>
+            <li><a class="waves-effect home-link" href="#home" >home</a></li>
             <li><a class="waves-effect staaticpage-details" >Static website</a></li>
             <li><a class="waves-effect " href="#">about</a></li>
-            <li><a class="waves-effect " href="#">contact</a></li>
+            <li><a class="waves-effect modal-trigger" href="#contact-model">contact</a></li>
             <li><a class="waves-effect " href="#">help!</a></li>
             </ul>
     </div>
@@ -47,28 +49,28 @@
 
 
         <div class="mainpage-wrapper">
-        <div class="welcome-screen">
-            <div class="carosel-container">
-                <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img class="img-250" src="https://i0.wp.com/torchbankz.com/wp-content/uploads/2017/11/buid-website-nigeria.png?fit=560%2C315&ssl=1"></a>
-                    <a class="carousel-item" href="https://just-arun.github.io/arun.github.io/"><img class="img-250" src="data:image/jpeg;base64,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"></a>
-                    <a class="carousel-item" href="#three!"><img class="img-250" src="https://lorempixel.com/250/250/nature/3"></a>
-                    <a class="carousel-item" href="#four!"><img class="img-250" src="https://lorempixel.com/250/250/nature/4"></a>
-                    <a class="carousel-item" href="#five!"><img class="img-250" src="https://lorempixel.com/250/250/nature/5"></a>
+            <div class="welcome-screen">
+                <div class="carosel-container">
+                    <div class="carousel">
+                        <a class="carousel-item" href="#one!"><img class="img-250" src="https://i0.wp.com/torchbankz.com/wp-content/uploads/2017/11/buid-website-nigeria.png?fit=560%2C315&ssl=1"></a>
+                        <a class="carousel-item" href="https://just-arun.github.io/arun.github.io/"><img class="img-250" src="data:image/jpeg;base64,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"></a>
+                        <a class="carousel-item" href="#three!"><img class="img-250" src="https://cdn.business2community.com/wp-content/uploads/2017/11/IOT-600x395.jpg"></a>
+                        <a class="carousel-item" href="#four!"><img class="img-250" src="https://lorempixel.com/250/250/nature/4"></a>
+                        <a class="carousel-item" href="#five!"><img class="img-250" src="https://lorempixel.com/250/250/nature/5"></a>
+                    </div>
+                </div>
+                <div class="welcome">
+                    <h5 class="center">Welcome to QueueDev</h5>
+                    <p>
+                        we provide cost effective solutions for all your website app needs.
+                        our prodect are build with extream precession and mobile responsiveness
+                        we provide product with all catogeries for you to choose form.
+                    </p>
                 </div>
             </div>
-            <div class="welcome">
-                <h5 class="center">Welcome to QueueDev</h5>
-                <p>
-                    we provide cost effective solutions for all your website app needs.
-                    our prodect are build with extream precession and mobile responsiveness
-                    we provide product with all catogeries for you to choose form.
-                </p>
-            </div>
-        </div>
 
-
-            <div class="products-catogery">
+            <!-- our products catogery -->
+            <div id="products-catogery" class="products-catogery">
                 <h4 class="center">Our products</h4>
                 <div class="row">
                     <div class="col s12">
@@ -109,49 +111,11 @@
 
 
         </div>
-        <div id="staicWebpage" class="sub-page">
-            <h3 class="center animated-underline">static webpage</h3>
-            <p>
-                Our static webpage are not like anyother websitesite but contains aditional features like sending contact mail for busness,
-                and paralax effect for awsome looking website all at an resonabel cost, and if the useer prefered then they will get the look and feel of the 
-                android app on the website.
-            </p>
 
-            <h5>Time Span</h5>
-            <p>
-                all our static products are made according to our customers requirement and made within 2-3 days
-            </p>
-
-            <hr>
-            <table>
-                <thead>
-                    <th>profuct</th>
-                    <th>cost</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Simple Static page</td>
-                        <td>Rs.2,500</td>
-                    </tr>
-                    <tr>
-                        <td>Portfolio</td>
-                        <td>Rs.3,500</td>
-                    </tr>
-                    <tr>
-                        <td>Scrolling Effect</td>
-                        <td>Rs.1,000</td>
-                    </tr>
-                    <tr>
-                        <td>contact form</td>
-                        <td>Rs.500</td>
-                    </tr>
-                    <tr>
-                        <td>e-commerce Template</td>
-                        <td>Rs.5,500</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+        <!-- sub pages start -->
+        <div id="staicWebpage" class="sub-page"></div>
+        <div id="dynamicPage" class="dynamic-page-wrapper"></div>
+        <div id="ecomercingPage" class="ecomercing-webpage"></div>
 
     </div>
 
@@ -165,6 +129,16 @@
         </p>
     </div>
 </div>
+<div id="contact-model" class="modal">
+    <div class="modal-content">
+        <h5 class="center">Contact Us Through</h5>
+        <div class="collection">
+            <a href="#" class="collection-item "><div class="contact-style"><img src="./assets/gmail.png" alt=""> <span>Mail</span></div></a>
+            <a href="#" class="collection-item contact-model-style"><div class="contact-style"><img src="./assets/whatsapp.png" alt=""><span>Whatsapp</span></div></a>
+            <a href="tel:+8248602899" class="collection-item contact-model-style"><div class="contact-style"><img src="./assets/phone-receiver.png" alt=""> <span>Mobile</span></div></a>
+        </div>
+    </div>
+</div>
 
 
 
@@ -174,8 +148,9 @@
           <i class="large material-icons">add</i>
         </a>
         <ul>
-          <li><a href="#mail-model" class=" waves-effect btn-floating red modal-trigger"><i class="material-icons">email</i></a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=97899110376&text=Hi, I contacted you Through your website." class=" waves-effect btn-floating transparent modal-trigger"><img class="whatsapp" src="https://img.icons8.com/color/64/000000/whatsapp.png"></a></li>
+          <li><a href="mailto:arunberry47@gmail.com?Subject=Hello%20again" class=" waves-effect btn-floating red modal-trigger"><i class="material-icons">email</i></a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=9789911037&text=Hi, I contacted you Through your website." class=" waves-effect btn-floating white modal-trigger"><img class="" src="./assets/whatsapp.png"></a></li>
+          <li><a href="tel:+8248602899" class="waves-effect btn-floating blue modal-trigger"><i class="material-icons">call</i></a></li>
         </ul>
       </div>
 
@@ -185,8 +160,10 @@
     <a href="https://icons8.com/icon/16713/whatsapp"></a>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./js/riouting.js"></script>
+    <script src="./js/pages.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js//routing.js"></script>
+    <script src="./js/scrollingFunction.js"></script>
 </body>
 
 </html>
