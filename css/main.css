@@ -1,3 +1,10 @@
+html {
+  scroll-behavior: smooth; }
+
+@media screen and (max-width: 600px) {
+  #Title {
+    font-size: 20px; } }
+
 .custom-title {
   margin: 0px;
   padding: 11px 0; }
@@ -51,8 +58,8 @@ footer {
     position: absolute;
     border: 1px solid red;
     width: 0%;
-    -webkit-animation: toLeft 2s 1 forwards linear;
-    animation: toLeft 2s 1 forwards linear; }
+    -webkit-animation: toLeft 1s 1 forwards linear;
+    animation: toLeft 1s 1 forwards linear; }
 
 @-webkit-keyframes toLeft {
   0% {
