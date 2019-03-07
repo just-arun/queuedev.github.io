@@ -1,6 +1,13 @@
 html {
   scroll-behavior: smooth; }
 
+h5 {
+  margin-bottom: 50px; }
+
+p {
+  text-transform: capitalize;
+  text-indent: 4rem; }
+
 @media screen and (max-width: 600px) {
   #Title {
     font-size: 20px; } }
@@ -23,8 +30,7 @@ html {
   transform: translateY(100px); }
 
 .sub-page {
-  display: none;
-  opacity: 0; }
+  display: none; }
 
 footer {
   padding: 30px 0px; }
@@ -46,6 +52,112 @@ footer {
   .contact-style span {
     left: 1.5rem;
     position: relative; }
+
+.page404 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #252525; }
+  .page404 img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    @media screen and (max-width: 600px) {
+      .page404 img {
+        height: 80%; } }
+
+.noscript {
+  position: fixed;
+  height: 1000vh;
+  width: 100vw;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.788);
+  color: white;
+  text-align: center; }
+  .noscript h4 {
+    position: absolute;
+    top: 250px;
+    padding: 30px; }
+
+tr a {
+  color: #000; }
+
+tr div {
+  position: relative;
+  top: -5px; }
+  tr div i {
+    position: relative;
+    top: 8px;
+    margin-right: 5px; }
+
+.backButton {
+  background: #f44336;
+  color: #000;
+  -webkit-box-shadow: 0 0 0 0 black;
+  box-shadow: 0 0 0 0 black;
+  position: fixed;
+  top: 55px;
+  z-index: 1;
+  left: 0px;
+  padding: 10px;
+  border-radius: 0 0 50% 0;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s; }
+  .backButton i {
+    color: #fff; }
+
+.addon-link {
+  float: right;
+  font-weight: 500;
+  font-size: 10px;
+  padding: 5px 10px;
+  background: #ff5c8d;
+  color: #fff;
+  border-radius: 10px; }
+
+.flexingbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .flexingbox div {
+    width: 300px;
+    height: 300px;
+    position: relative; }
+    .flexingbox div img {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%; }
+  .flexingbox p {
+    width: 300px;
+    height: 300px;
+    position: relative; }
+    @media screen and (min-width: 600px) {
+      .flexingbox p {
+        width: 400px; } }
+    @media screen and (min-width: 600px) {
+      .flexingbox p {
+        padding: 0px 0px 0px 20px; } }
+
+footer p {
+  text-align: center; }
 
 .animated-underline {
   position: relative;
