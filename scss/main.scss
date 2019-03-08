@@ -9,9 +9,32 @@
         @content;
     }
 }
+@mixin linear($c1,$c2) {
+    background-image:   -webkit-gradient(linear, 0% 0%, 0% 100%, from($c1), to($c2));
+    background-image:   -webkit-linear-gradient(top, $c1, $c2);
+    background-image:   -moz-linear-gradient(top, $c1, $c2);
+    filter:                 progid:DXImageTransform.Microsoft.Gradient(startColorStr='$c1', endColorStr='$c2', GradientType=0);
+    -ms-filter:             "progid:DXImageTransform.Microsoft.Gradient(startColorStr='$c1', endColorStr='$c2', GradientType=0)";
+    background-image:   -ms-linear-gradient(top, $c1, $c2);
+    background-image:   -o-linear-gradient(top, $c1, $c2);
+    // background-image:   url(images/fallback-gradient.png);
+    background-color:   $c1;
+}
+
+
+
+@mixin linear-gradient-b($args...) {
+    background-image: -o-linear-gradient($args); 
+    background-image: -moz-linear-gradient($args); 
+    background-image: -webkit-linear-gradient($args); 
+     background-image: linear-gradient($args); 
+}
+
+
+
 
 html{
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 h5{
     margin-bottom: 50px;
@@ -25,10 +48,25 @@ p{
         font-size: 20px;
     }
 }
-
+.linear-tneam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, red, blue);
+}
+.default-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgb(244,67,54);
+}
 .custom-title {
     margin: 0px;
     padding: 11px 0;
+}
+.custome-menu{
+    padding-right: 15px;
+    padding-right: 15px;
 }
 
 .img-250 {
@@ -40,6 +78,9 @@ p{
     opacity: 0;
     transition: 1s;
     transform: translateY(100px);
+}
+.small-font{
+    font-size: 10px;
 }
 
 .sub-page {
@@ -127,7 +168,8 @@ tr{
     padding: 10px;
     border-radius: 0 0 50% 0;
     transform-origin: left top;
-    transition: 1s;
+    display: none;
+    transition: .3s;
     i{
         color: #fff;
     }
@@ -169,13 +211,36 @@ tr{
     }
 }
 
-
+.main-page{
+    display: block;
+}
 
 footer{
     p{
-        text-align: center;
+        @include desk(){
+            text-align: center;
+        }
     }
 }
+
+
+
+.gradient-nav{
+    @include linear-gradient-b(to right, red, blue);
+}
+
+.gradient-table{
+    // @include linear(red, blue);
+    color: white;
+    @include linear-gradient-b(to top right, red, blue);
+}
+.wig{
+    opacity: 0;
+    transform:translateY(100px);
+}
+
+
+
 
 
 

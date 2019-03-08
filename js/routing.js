@@ -71,49 +71,51 @@ const RoutingLogic = ()=>{
         BAR === DynamicTemplate ||
         BAR === StaticSinglePageApplication
         ) {
-        $("#404page").css(dnone);
+        $("#404page").animate({right: '200px'},1000).fadeOut();
     } else {
-        $("#404page").css(dblck);
+        $("#404page").animate({right: '0px'}).fadeIn();
         $("#404page").html(notFound.body);
     }
     // for Home page
     if (BAR === "" || BAR === "#") {
-        $('#mainpage-wrapper').css(dblck);
+        $('#mainpage-wrapper').animate({right: '0px'}).fadeIn();
+        $(".main-page-Widgets").html(dashboard_widget.body);
+
         $('#Title').text('QueueDev');
-        $('.backButton').css(dnone);
+        $('.backButton').fadeOut();
         scroolToTop();
     } else {
-        $('#mainpage-wrapper').css(dnone);
-        $('.backButton').css(dblck);
+        $('#mainpage-wrapper').animate({right: '200px'},1000).fadeOut();
+        $('.backButton').fadeIn();
     }
     // for Contact page
     if (BAR === page1) {
         $('#Title').text(staticWebpage.title);
         $('#staicWebpage').html(staticWebpage.body);
-        $('#staicWebpage').css(dblck);
+        $('#staicWebpage').animate({right: '0px'}).fadeIn();
         scroolToTop();
     } else {
         $('#staicWebpage').html('');
-        $('#staicWebpage').css(dnone);
+        $('#staicWebpage').animate({right: '200px'},1000).fadeOut();
     }
     // for Dynamic Webpage
     if (BAR === page2) {
         $('#Title').text(dynamicWebpage.title);
         $('#dynamicPage').html(dynamicWebpage.body);
-        $('#dynamicPage').css(dblck);
+        $('#dynamicPage').animate({right: '0px'}).fadeIn();
         scroolToTop();
     } else {
         $('#dynamicPage').html('');
-        $('#dynamicPage').css(dnone);
+        $('#dynamicPage').animate({right: '200px'},1000).fadeOut();
     }
     if (BAR === page3) {
         $('#Title').text(eComercing.title);
-        $("#ecomercingPage").css(dblck);
+        $("#ecomercingPage").animate({right: '0px'}).fadeIn();
         $('#ecomercingPage').html(eComercing.body)
         scroolToTop();
     } else {
         $('#ecomercingPage').html();
-        $("#ecomercingPage").css(dnone);
+        $("#ecomercingPage").animate({right: '200px'},1000).fadeOut();
     }
 
 
@@ -126,35 +128,42 @@ const RoutingLogic = ()=>{
     // simple static page
     if(BAR === SimpleStatic) {
         $('#Title').text(simple_static_page.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(simple_static_page.body);
+        scroolToTop();
     } else if(BAR === StaticPortfolio) {
         $('#Title').text(Static_portfolio.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(Static_portfolio.body);
+        scroolToTop();
     } else if(BAR === StaticTemplate){
         $('#Title').text(static_templates.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(static_templates.body);
+        scroolToTop();
     } else if(BAR === StaticSinglePageApplication){
         $('#Title').text(staticSPA.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(staticSPA.body);
+        scroolToTop();
     } else if(BAR === ScrollingEffect){
         $('#Title').text(Scrolling_effect.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(Scrolling_effect.body);
+        scroolToTop();
     } else if(BAR === ContactForm){
         $('#Title').text(contact_form.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(contact_form.body);
+        scroolToTop();
     } else if(BAR === MobileAppLook){
         $('#Title').text(Mobile_feel_look.title);
-        $('#componentPage').css(dblck);
+        $('#componentPage').animate({right: '0px'}).fadeIn();
         $('#componentPage').html(Mobile_feel_look.body);
+        scroolToTop();
     }
     else {
-        $('#componentPage').css(dnone);
+        $('#componentPage').animate({right: '200px'},1000).fadeOut();
         $('#componentPage').html('');
     }
 
@@ -163,10 +172,10 @@ const RoutingLogic = ()=>{
 
 $(window).on('hashchange', function() {
     RoutingLogic();
-    $('.backButton').css('display','none');
+    $('.backButton').fadeOut();
 });
 
 $(document).ready(function(){
     RoutingLogic();
-    $('.backButton').css('display','none');
+    $('.backButton').fadeOut();
 });

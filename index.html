@@ -28,6 +28,8 @@
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo" id="Title">QueueDev</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <!-- <a class="waves-light modal-trigger right custome-menu" href="#theam-model"> <i class="material-icons">more_vert</i> </a> -->
+                    <a class="dropdown-trigger right" style="margin-right: 10px;" href='#' data-target='dropdown1'><i class="material-icons">more_vert</i></a>
                     <ul class="right hide-on-med-and-down">
                     <li class="home-link"><a href="#" >home</a></li>
                     <li class="staaticpage-details"><a href="#static-webpage">static website</a></li>
@@ -39,15 +41,19 @@
                 </div>
             </nav>
         </div>
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#theam-model" class="modal-trigger" style="display: flex;"><i class="material-icons">color_lens</i><span class="small-font">Theme</span></a></li>
+            </ul>
             <ul class="sidenav" id="mobile-demo">
-            <li><h4 class="center red white-text custom-title">QueueDev</h4></li>
-            <li><a class="waves-effect home-link" href="#" >home</a></li>
-            <li><a class="waves-effect staaticpage-details" href="#static-webpage" >Static website</a></li>
-            <li><a href="#dynamic-webpage">dynamic webpage</a></li>
-            <li><a href="#e_comercing-webpage">e-comercing</a></li>
-            <li><a class="waves-effect " href="#">about</a></li>
-            <li><a class="waves-effect modal-trigger" href="#contact-model">contact</a></li>
-            <li><a class="waves-effect " href="#">help!</a></li>
+                <li><h4 class="center red white-text custom-title">QueueDev</h4></li>
+                <li><a class="waves-effect home-link" href="#" >home</a></li>
+                <li><a class="waves-effect staaticpage-details" href="#static-webpage" >Static website</a></li>
+                <li><a href="#dynamic-webpage">dynamic webpage</a></li>
+                <li><a href="#e_comercing-webpage">e-comercing</a></li>
+                <li><a class="waves-effect " href="#">about</a></li>
+                <li><a class="waves-effect modal-trigger" href="#contact-model">contact</a></li>
+                <li><a class="waves-effect modal-trigger" href="#theam-model">Theam</a></li>
+                <li><a class="waves-effect " href="#">help!</a></li>
             </ul>
     </div>
     <!-- back button -->
@@ -123,7 +129,8 @@
                 </div>
             </div>
 
-            
+
+            <div class="main-page-Widgets"></div>
 
         </div>
 
@@ -169,6 +176,14 @@
         </div>
     </div>
 </div>
+<div id="theam-model" class="modal">
+    <div class="modal-content">
+        <p>Choosr A Theme</p>
+        <hr>
+        <div class="btn-floating btn-large waves-effect waves-light linear-tneam"></div> 
+        <div class="btn-floating btn-large waves-effect waves-light default-theam"></div>
+    </div>
+</div>
 
 
 
@@ -188,7 +203,10 @@
         <p>All Rights Reserved copyrights &COPY; 2019</p>
     </footer>
     <a href="https://icons8.com/icon/16713/whatsapp"></a>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- loading components -->
     <script src="./js/pages/components/simpleStaticPage.js"></script>
@@ -198,6 +216,7 @@
     <script src="./js/pages/components/ScrollingEffect.js"></script>
     <script src="./js/pages/components/ContactForm.js"></script>
     <script src="./js/pages/components/MobileFeelLook.js"></script>
+    <script src="./js/pages/dashboardWidget.js"></script>
     <!-- loading pages -->
     <script src="./js/pages/backButton.js"></script>
     <script src="./js/pages/notFound.js"></script>

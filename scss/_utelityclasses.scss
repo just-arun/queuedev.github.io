@@ -27,3 +27,15 @@
 }
 
 
+.theme-1{
+    @include linear-gradient-b(to top right, red, blue);
+    nav,.custom-title,.sidenav{
+        @include linear-gradient-b(to right, rgb(139,0,126), blue);
+    }
+    .btn-floating,.backButton,.modal{
+        @include linear-gradient-b(to top right, red, blue);
+    }
+    .default-theam{
+        background: rgb(244,67,54);
+    }
+}

@@ -11,10 +11,24 @@ $(document).ready(function(){
     $('.tabs').tabs();
     $('.fixed-action-btn').floatingActionButton();
     $('.modal').modal();
+    // toolbarEnabled: true
+    $('.dropdown-trigger').dropdown();
 });
 
 
 $('.sidenav li').click(() => {
     $('.sidenav').sidenav('close');
 });
+
+
+$('.default-theam').click(function () { 
+    $('body').removeClass('theme-1');
+    $('.modal').modal('theam-model',dismissible);
+});
+
+$('.linear-tneam').click(()=>{
+    $('body').addClass('theme-1');
+    $('.modal').modal('theam-model',dismissible);
+})
+
 
