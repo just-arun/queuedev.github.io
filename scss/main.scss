@@ -32,7 +32,6 @@
 
 
 
-
 html{
     // scroll-behavior: smooth;
 }
@@ -54,11 +53,97 @@ p{
     border-radius: 50%;
     @include linear-gradient-b(to top right, red, blue);
 }
+.linear-2-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #eecda3 , #ef629f);
+}
+.linear-3-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #667eea , #764ba2);
+}
+.linear-4-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #89f7fe , #66a6ff);
+}
+.linear-5-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #fdfcfb , #e2d1c3);
+}
+.linear-6-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #48c6ef , #6f86d6);
+}
+.linear-7-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #13547a , #80d0c7);
+}
+.linear-8-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #434343 , #000000);
+}
+.linear-9-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #ff758c , #ff7eb3);
+}
+.linear-10-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #c79081 , #dfa579);
+}
+.linear-11-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #09203f , #537895);
+}
+.linear-12-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #96deda , #50c9c3);
+}
+.linear-13-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #29323c , #485563);
+}
+.linear-14-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #ee9ca7 , #ffdde1);
+}
+.linear-15-theam{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    @include linear-gradient-b(to top right, #1e3c72 , #2a5298);
+}
 .default-theam{
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background: rgb(244,67,54);
+    background: rgb(255, 255, 255);
+    &:focus{background: #fff;}
+    &:hover{background: #fff;}
 }
 .custom-title {
     margin: 0px;
@@ -216,6 +301,7 @@ tr{
 }
 
 footer{
+    padding: 50px 0px;
     p{
         @include desk(){
             text-align: center;

@@ -15,7 +15,7 @@
         window.onload = ()=>{document.body.removeChild(document.querySelector('.preloader-container'))}
     </script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/materialize.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -28,8 +28,7 @@
                 <div class="nav-wrapper">
                     <a href="#" class="brand-logo" id="Title">QueueDev</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <!-- <a class="waves-light modal-trigger right custome-menu" href="#theam-model"> <i class="material-icons">more_vert</i> </a> -->
-                    <a class="dropdown-trigger right" style="margin-right: 10px;" href='#' data-target='dropdown1'><i class="material-icons">more_vert</i></a>
+                    <a class="dropdown-trigger right" style="margin:0 10px 10px 0;" href='#' data-target='dropdown1'><i class="material-icons">settings</i></a>
                     <ul class="right hide-on-med-and-down">
                     <li class="home-link"><a href="#" >home</a></li>
                     <li class="staaticpage-details"><a href="#static-webpage">static website</a></li>
@@ -42,7 +41,8 @@
             </nav>
         </div>
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="#theam-model" class="modal-trigger" style="display: flex;"><i class="material-icons">color_lens</i><span class="small-font">Theme</span></a></li>
+                <li class="center"><a href="#theam-model" class="modal-trigger menu-show" style="display: flex;"><i class="material-icons">color_lens</i></a></li>
+                <li><a href="#" class="modal-trigger menu-show"><i class="material-icons">text_format</i></a></li>
             </ul>
             <ul class="sidenav" id="mobile-demo">
                 <li><h4 class="center red white-text custom-title">QueueDev</h4></li>
@@ -129,6 +129,7 @@
                 </div>
             </div>
 
+            <button class="btn-flat waves-effect">click this</button>
 
             <div class="main-page-Widgets"></div>
 
@@ -180,8 +181,24 @@
     <div class="modal-content">
         <p>Choosr A Theme</p>
         <hr>
-        <div class="btn-floating btn-large waves-effect waves-light linear-tneam"></div> 
-        <div class="btn-floating btn-large waves-effect waves-light default-theam"></div>
+        <div class="theam-btns">
+            <div class="btn-floating btn-large waves-effect waves-light linear-tneam"></div> 
+            <div class="btn-floating btn-large waves-effect waves-light default-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-2-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-3-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-4-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-5-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-6-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-7-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-8-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-9-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-10-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-11-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-12-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-13-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-14-theam"></div>
+            <div class="btn-floating btn-large waves-effect waves-light linear-15-theam"></div>
+        </div>
     </div>
 </div>
 
@@ -189,7 +206,7 @@
 
 <!-- action button -->
       <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red waves-effect">
+        <a class="btn-floating con btn-large red waves-effect">
           <i class="large material-icons">add</i>
         </a>
         <ul>
@@ -203,11 +220,8 @@
         <p>All Rights Reserved copyrights &COPY; 2019</p>
     </footer>
     <a href="https://icons8.com/icon/16713/whatsapp"></a>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/lib/jquery.min.js"></script>
+    <script src="./js/lib/materialize.min.js"></script>
     <!-- loading components -->
     <script src="./js/pages/components/simpleStaticPage.js"></script>
     <script src="./js/pages/components/StaticPortfolio.js"></script>
