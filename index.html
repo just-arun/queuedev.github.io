@@ -14,6 +14,7 @@
     <script>
         window.onload = ()=>{document.body.removeChild(document.querySelector('.preloader-container'))}
     </script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bilbo|Caveat|Cinzel|Great+Vibes|Handlee|Indie+Flower|Kaushan+Script|Lato|Lobster|Lora|Marck+Script|Nanum+Myeongjo|Open+Sans|Open+Sans+Condensed:300|PT+Sans|Pacifico|Patrick+Hand|Playfair+Display|Poiret+One|Raleway|Roboto|Roboto+Mono|Sacramento|Satisfy|Sniglet|Source+Sans+Pro|Srisakdi|Suranna|Tangerine|Thasadith" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./css/materialize.min.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -35,14 +36,15 @@
                     <li class="dynamic-webpage"><a href="#dynamic-webpage">dynamic webpage</a></li>
                     <li class="e_comercing-webpage"><a href="#e_comercing-webpage">e-comercing</a></li>
                     <li><a class="modal-trigger" href="#contact-model">contact</a></li>
-                    <li><a href="#">help!</a></li>
+                    <li><a class="waves-effect " href="#about-Queuedev">about</a></li>
+                    <li><a href="#Help-Queuedev">help!</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
             <ul id='dropdown1' class='dropdown-content'>
-                <li class="center"><a href="#theam-model" class="modal-trigger menu-show" style="display: flex;"><i class="material-icons">color_lens</i></a></li>
-                <li><a href="#" class="modal-trigger menu-show"><i class="material-icons">text_format</i></a></li>
+                <li><a href="#theam-model" class="modal-trigger menu-show"><i class="material-icons">color_lens</i></a></li>
+                <li><a href="#font-model" class="modal-trigger "><i class="material-icons">text_format</i></a></li>
             </ul>
             <ul class="sidenav" id="mobile-demo">
                 <li><h4 class="center red white-text custom-title">QueueDev</h4></li>
@@ -50,10 +52,9 @@
                 <li><a class="waves-effect staaticpage-details" href="#static-webpage" >Static website</a></li>
                 <li><a href="#dynamic-webpage">dynamic webpage</a></li>
                 <li><a href="#e_comercing-webpage">e-comercing</a></li>
-                <li><a class="waves-effect " href="#">about</a></li>
+                <li><a class="waves-effect " href="#about-Queuedev">about</a></li>
                 <li><a class="waves-effect modal-trigger" href="#contact-model">contact</a></li>
-                <li><a class="waves-effect modal-trigger" href="#theam-model">Theam</a></li>
-                <li><a class="waves-effect " href="#">help!</a></li>
+                <li><a class="waves-effect " href="#Help-Queuedev">help!</a></li>
             </ul>
     </div>
     <!-- back button -->
@@ -73,11 +74,11 @@
             <div class="welcome-screen">
                 <div class="carosel-container">
                     <div class="carousel">
-                        <a class="carousel-item" href="#one!"><img class="img-250" src="https://i0.wp.com/torchbankz.com/wp-content/uploads/2017/11/buid-website-nigeria.png?fit=560%2C315&ssl=1"></a>
-                        <a class="carousel-item" href="https://just-arun.github.io/arun.github.io/"><img class="img-250" src="data:image/jpeg;base64,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"></a>
-                        <a class="carousel-item" href="#three!"><img class="img-250" src="https://cdn.business2community.com/wp-content/uploads/2017/11/IOT-600x395.jpg"></a>
-                        <a class="carousel-item" href="#four!"><img class="img-250" src="https://primetechplc.com/images/Web-design.png"></a>
-                        <a class="carousel-item" href="#five!"><img class="img-250" src="https://static.skillshare.com/uploads/project/2d5b54a194ef80673d7587cf445d9f6e/0fb4c127"></a>
+                        <a class="carousel-item" href="#one!"><img class="img-250" src="http://it-cox.com/images/responsive_website.gif"></a>
+                        <a class="carousel-item" href="https://just-arun.github.io/arun.github.io/"><img class="img-250" src="https://cdn.dribbble.com/users/559082/screenshots/2845703/landing-footer.gif"></a>
+                        <a class="carousel-item" href="#three!"><img class="img-250" src="https://cdn.dribbble.com/users/181980/screenshots/1787138/cardsaround_3_dribble_2x.gif"></a>
+                        <a class="carousel-item" href="#four!"><img class="img-250" src="https://cdn.dribbble.com/users/2037709/screenshots/4529067/web33.gif"></a>
+                        <a class="carousel-item" href="#five!"><img class="img-250" src="https://cdn.dribbble.com/users/2403854/screenshots/5420642/kz-portfolio.gif"></a>
                     </div>
                 </div>
                 <div class="welcome">
@@ -129,18 +130,31 @@
                 </div>
             </div>
 
-            <button class="btn-flat waves-effect">click this</button>
-
-            <div class="main-page-Widgets"></div>
+            <div class="main-page-Widgets">
+                <div class="wig wig-1"></div>
+                <div class="wig wig-2"></div>
+                <div class="wig wig-3"></div>
+                <div class="wig wig-4"></div>
+                <div class="wig wig-5"></div>
+                <div class="wig wig-6"></div>
+                <div class="wig wig-7"></div>
+                <div class="wig wig-8"></div>
+                <div class="wig wig-9"></div>
+                <div class="wig wig-10"></div>
+            </div>
 
         </div>
 
         <!-- sub pages start -->
         <div id="componentPage" class="sub-page"></div>
+        <div id="AboutPage" class="sub-page"></div>
+        <div id="HelpPage" class="sub-page"></div>
         <div id="staicWebpage" class="sub-page"></div>
         <div id="dynamicPage" class="sub-page dynamic-page-wrapper"></div>
         <div id="ecomercingPage" class="sub-page ecomercing-webpage"></div>
         <div id="404page" class="sub-page page404"></div>
+
+        
 
     </div>
 
@@ -148,9 +162,18 @@
     <noscript> <div class="noscript"><h4>Please enabel JavaScript to Load page properly</h4></div></noscript>
 
 
-
-
-
+    <!-- <div class="fixed-action-btn" style="position: fixed;left: 30px;">
+        <a class="btn-floating btn-large red">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+          <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+          <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+          <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+             -->
 
 
 
@@ -202,6 +225,35 @@
     </div>
 </div>
 
+<div id="font-model" class="modal">
+    <div class="modal-content">
+        <p>Webpage Font</p>
+        <hr>
+        <div class="font-Family">
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_1">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_2">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_3">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_4">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_5">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_6">Aa</div>
+            <div class="btn-floaval()ing btn-large waves-effect waves-light F-btns font_7">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_8">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_9">Aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_10">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_21">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_22">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_23">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_24">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_25">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_26">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_27">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_28">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_29">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_30">aa</div>
+            <div class="btn-floating btn-large waves-effect waves-light F-btns font_31">aa</div>
+        </div>
+    </div>
+</div>
 
 
 <!-- action button -->
@@ -217,7 +269,10 @@
       </div>
 
     <footer>
+        <br>
         <p>All Rights Reserved copyrights &COPY; 2019</p>
+        <br>
+        <br>
     </footer>
     <a href="https://icons8.com/icon/16713/whatsapp"></a>
     <script src="./js/lib/jquery.min.js"></script>
@@ -230,8 +285,16 @@
     <script src="./js/pages/components/ScrollingEffect.js"></script>
     <script src="./js/pages/components/ContactForm.js"></script>
     <script src="./js/pages/components/MobileFeelLook.js"></script>
-    <script src="./js/pages/dashboardWidget.js"></script>
+    <script src="./js/pages/components/BasicDynaimcPage.js"></script>
+    <script src="./js/pages/components/dynamicPortfolio.js"></script>
+    <script src="./js/pages/components/DynamicTemplate.js"></script>
+    <script src="./js/pages/components/LiveChating.js"></script>
+    <script src="./js/pages/components/BasicEcomercingPage.js"></script>
+    <script src="./js/pages/components/AverageEcomercingPackage.js"></script>
+    <script src="./js/pages/components/AdvanceEcomercingWebsite.js"></script>
+    <!-- <script src="./js/pages/Settings.js"></script> -->
     <!-- loading pages -->
+    <script src="./js/pages/dashboardWidget.js"></script>
     <script src="./js/pages/backButton.js"></script>
     <script src="./js/pages/notFound.js"></script>
     <script src="./js/pages/staticWebpage.js"></script>
@@ -241,6 +304,9 @@
     <script src="./js/main.js"></script>
     <script src="./js//routing.js"></script>
     <script src="./js/scrollingFunction.js"></script>
+    <script>
+    
+    </script>
 </body>
 
 </html>

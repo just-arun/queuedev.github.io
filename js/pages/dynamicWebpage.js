@@ -21,34 +21,48 @@ const dynamicWebpage = {
                     </thead>
                     <tbody>
                         <tr>
-                            <td><a href="#Basic-Dynamic-page"> <i class="material-icons"> web</i>Basic Dynamic page<a/></td>
+                            <td><a href="#Basic-Dynamic-page"> <i class="material-icons"> web</i>Basic Dynamic page</a></td>
                             <td>Rs.8,000</td>
                         </tr>
                         <tr>
-                            <td><a href="#Dynamic-Portfolio"> <i class="material-icons"> web</i>Dynamic Portfolio<a/></td>
+                            <td><a href="#Dynamic-Portfolio"> <i class="material-icons"> web</i>Dynamic Portfolio</a></td>
                             <td>Rs.8,000</td>
                         </tr>
                         <tr>
-                            <td><a href="#Dynamic-Template"> <i class="material-icons" >web</i>Dynamic Template<a/></td>
+                            <td><a href="#Dynamic-Template"> <i class="material-icons" >web</i>Dynamic Template</a></td>
                             <td>Rs.5,500</td>
                         </tr>
                         <tr>
-                            <td><a href="#Scrolling-Effect"> <i class="material-icons"> add_box</i>Scrolling Effect<a/></td>
+                            <td><a href="#Scrolling-Effect"> <i class="material-icons"> add_box</i>Scrolling Effect</a></td>
                             <td>Rs.1,000</td>
                         </tr>
                         <tr>
-                            <td><a href="#contact-form"> <i class="material-icons"> add_box</i>contact form<a/></td>
+                            <td><a href="#contact-form"> <i class="material-icons"> add_box</i>contact form</a></td>
                             <td>Rs.500</td>
                         </tr>
                         <tr>
-                            <td><a href="#Live-chating"> <i class="material-icons"> add_box</i>Live chating<a/></td>
+                            <td><a href="#Live-chating"> <i class="material-icons"> add_box</i>Live chating</a></td>
                             <td>Rs.1,500</td>
                         </tr>
                         <tr>
-                            <td><a href="#Mobile-App-Look"> <i class="material-icons"> add_box</i>Mobile App Look/Feel<a/></td>
+                            <td><a href="#Mobile-App-Look"> <i class="material-icons"> add_box</i>Mobile App Look/Feel</a></td>
                             <td>Rs.1,000</td>
                         </tr>
                     </tbody>
                 </table>
+                <br>
+                ${basic_dynamic_page.body}
+                <br>
+                ${dynamic_portfolio.body}
+                <br>
+                ${dynamic_template.body}
+                <br>
+                ${Scrolling_effect.body}
+                <br>
+                ${contact_form.body}
+                <br>
+                ${live_chating.body}
+                <br>
+                ${Mobile_feel_look.body}
     `
 }

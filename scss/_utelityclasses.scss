@@ -26,6 +26,8 @@
     }
 }
 
+
+// them constructor
 @mixin themConstructor($c1,$c2,$c3,$c4,$c5,$c6,$c7,$c8) {
     @include linear-gradient-b(to top right, $c1, $c2);
     background-attachment: fixed;
@@ -83,6 +85,18 @@
     .active{
         color: lighten($color: $c3, $amount: 50);
     }
+    .dropdown-content{
+        li,a{
+            @include linear-gradient-b(to right, $c1, $c2);
+        }
+    }
+    .F-btns{
+        background:transparent;
+    }
+}
+// Font constructor
+@mixin FontC($font...) {
+    font-family: $font;
 }
 
 
@@ -146,3 +160,67 @@
 .theme-15{
     @include themConstructor(#1e3c72, #2a5298, #fff, #234582, #234683, #234683, #244886, #244684);
 }
+
+
+.font-1{h1,h2,h3,h4,h5,h6,p{@include FontC('Roboto', sans-serif)}}
+.font-2{h1,h2,h3,h4,h5,h6,p{@include FontC('Srisakdi', cursive)}}
+.font-3{h1,h2,h3,h4,h5,h6,p{@include FontC('Source Sans Pro', sans-serif)}}
+.font-4{h1,h2,h3,h4,h5,h6,p{@include FontC('Lato', sans-serif)}}
+.font-5{h1,h2,h3,h4,h5,h6,p{@include FontC('Open Sans', sans-serif)}}
+.font-6{h1,h2,h3,h4,h5,h6,p{@include FontC('Raleway', sans-serif)}}
+.font-7{h1,h2,h3,h4,h5,h6,p{@include FontC('PT Sans', sans-serif)}}
+.font-8{h1,h2,h3,h4,h5,h6,p{@include FontC('Open Sans Condensed', sans-serif)}}
+.font-9{h1,h2,h3,h4,h5,h6,p{@include FontC('Playfair Display', serif)}}
+.font-10{h1,h2,h3,h4,h5,h6,p{@include FontC('Sniglet', cursive)}}
+.font-11{h1,h2,h3,h4,h5,h6,p{@include FontC('Lora', serif)}}
+.font-12{h1,h2,h3,h4,h5,h6,p{@include FontC('Roboto Mono', monospace)}}
+.font-13{h1,h2,h3,h4,h5,h6,p{@include FontC('Indie Flower', cursive)}}
+.font-14{h1,h2,h3,h4,h5,h6,p{@include FontC('Thasadith', sans-serif)}}
+.font-15{h1,h2,h3,h4,h5,h6,p{@include FontC('Pacifico', cursive)}}
+.font-16{h1,h2,h3,h4,h5,h6,p{@include FontC('Lobster', cursive)}}
+.font-17{h1,h2,h3,h4,h5,h6,p{@include FontC('Amatic SC', cursive)}}
+.font-18{h1,h2,h3,h4,h5,h6,p{@include FontC('Suranna', serif)}}
+.font-19{h1,h2,h3,h4,h5,h6,p{@include FontC('Cinzel', serif)}}
+.font-20{h1,h2,h3,h4,h5,h6,p{@include FontC('Satisfy', cursive)}}
+.font-21{h1,h2,h3,h4,h5,h6,p{@include FontC('Kaushan Script', cursive)}}
+.font-22{h1,h2,h3,h4,h5,h6,p{@include FontC('Caveat', cursive)}}
+.font-23{h1,h2,h3,h4,h5,h6,p{@include FontC('Bilbo', cursive)}}
+.font-24{h1,h2,h3,h4,h5,h6,p{@include FontC('Great Vibes', cursive)}}
+.font-25{h1,h2,h3,h4,h5,h6,p{@include FontC('Patrick Hand', cursive)}}
+.font-26{h1,h2,h3,h4,h5,h6,p{@include FontC('Poiret One', cursive)}}
+.font-27{h1,h2,h3,h4,h5,h6,p{@include FontC('Nanum Myeongjo', serif)}}
+.font-28{h1,h2,h3,h4,h5,h6,p{@include FontC('Handlee', cursive)}}
+.font-29{h1,h2,h3,h4,h5,h6,p{@include FontC('Sacramento', cursive)}}
+.font-30{h1,h2,h3,h4,h5,h6,p{@include FontC('Tangerine', cursive)}}
+.font-31{h1,h2,h3,h4,h5,h6,p{@include FontC('Marck Script', cursive)}}
+
+
+
+
+// toggling class
+.slideing-up{
+    animation: slideups 1s 1 forwards linear;
+}
+.slideing-left{
+    animation: slideCross 1s 1 forwards linear;
+}
+@keyframes slideCross{
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes slideups{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    } 100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.F-btns{
+    text-transform: capitalize;
+}
+
+
